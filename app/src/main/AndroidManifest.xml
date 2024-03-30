@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+        <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        <uses-permission android:name="android.permission.CAMERA" />
+        <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo_round"
+        android:largeHeap="true"
+        android:configChanges="orientation|screenSize"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="q">
+
+        <activity android:name=".Activity.AmbBookingActivity" />
+
+        <activity android:name=".Activity.BldGrpBookingActivity" />
+
+        <activity android:name=".Activity.WebView" />
+
+        <activity android:name=".Activity.ImgWebView" />
+
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:theme="@style/AppThemeSplsh"
+            />
+        <activity
+            android:name=".Activity.Splashscreen"
+            android:theme="@style/AppThemeSplsh"
+            tools:ignore="IntentFilterExportedReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.WelcomeActivity"
+            android:theme="@style/AppThemeSplsh" />
+
+        <activity
+            android:name=".Activity.MainHome"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+
+        <!-- Add your API key here -->
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rQnFcz1XAc3jfz39Z0kPamxX" />
+
+<!--        rzp_test_xdQQ9Ej80kBorA-->
+
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+
+        <activity
+            android:name=".Activity.PaymentActivity"
+            android:windowSoftInputMode="adjustPan" />
+
+    </application>
+
+</manifest>

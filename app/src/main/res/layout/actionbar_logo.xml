@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorPrimaryDark"
+    app:titleTextColor="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/btn_ring_color">
+
+        <EditText
+            android:id="@+id/search_edittext"
+            style="@style/Widget.AppCompat.SearchView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginEnd="10dp"
+            android:padding="5dp"
+            android:focusable="auto"
+            android:layout_weight="0.5"
+            android:background="@android:color/transparent"
+            android:hint="Search doctors, labs, medicines..."
+            android:imeOptions="actionSearch"
+            android:inputType="textAutoComplete"
+            android:maxLines="1"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textColor="#615E5E"
+            android:textColorHint="#615E5E" />
+
+        <Spinner
+            android:id="@+id/search_type"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:dropDownSelector="@color/textview_color"
+            android:background="@drawable/btn_bg_clr"
+            android:entries="@array/search"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

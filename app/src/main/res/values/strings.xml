@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">Arogyalok</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="api_key">AIzaSyAWZkWSoh_GSs_94yB3MHa2q7K8qVbmDcs</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="youAreNotUpdatedTitle">Update Available</string>
+    <string name="youAreNotUpdatedMessage">A new version of App is available. Please update to new version</string>
+    <string name="youAreNotUpdatedMessage1"> now </string>
+    <string name="update">Update</string>
+    <string name="start">Start</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+
+    <string name="slide_1_msg">Find Your Doctor</string>
+
+    <string name="slide_1_title">Search Doctors</string>
+    <string name="slide_1_desc">Get list of best doctors nearby and book appointment</string>
+
+    <string name="slide_2_title">Book Lab Test</string>
+    <string name="slide_2_desc">Search and book diagnostic test</string>
+
+    <string name="slide_3_title">Order Medicine</string>
+    <string name="slide_3_desc">Get details of nearby hospitals</string>
+
+    <string name="slide_4_title">Call Ambulance</string>
+    <string name="slide_4_desc">Get list of ambulances nearby you, to contact in emergency</string>
+
+    <string name="slide_5_title">Request For Blood</string>
+    <string name="slide_5_desc">Get list of ambulances nearby you, to contact in emergency</string>
+
+    <string-array name="blood_grp">
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>O+</item>
+        <item>O+</item>
+        <item>AB+</item>
+        <item>AB+</item>
+    </string-array>
+
+    <array name="pay_via">
+        <item>Cash</item>
+        <item>Online</item>
+    </array>
+
+    <array name="search">
+        <item>Select</item>
+        <item>Doctor</item>
+        <item>Lab</item>
+        <item>Ambulance</item>
+        <item>Medicine</item>
+    </array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="terms_and_conditions">Terms and Conditions</string>
+    <string name="search_txt_one">Your Request for </string>
+    <string name="search_txt_two"> has been Taken, Our Support Team Will Assist You Soon.</string>
+    <string name="call">18002749897</string>
+
+    <!--    <string name="terms_and_conditions">By signing in, you accept our <a href="http://arogyalok.com/Home/term_conditions/">Terms and Conditions/</a></string>-->
+
+
+
+</resources>

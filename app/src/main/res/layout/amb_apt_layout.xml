@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            app:cardBackgroundColor="#ffffff"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/colorPrimaryDark"
+                    android:fontFamily="@font/proxima_nova_soft_regular"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Book Appointment"
+                    android:textColor="#fff"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/proxima_nova_soft_regular"
+                        android:text="Patient Name"
+                        android:textColor="#D0322B2B"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/bg_btn_curved_square"
+                        android:fontFamily="@font/proxima_nova_soft_regular"
+                        android:hint="Enter Patient Name"
+                        android:inputType="textAutoComplete"
+                        android:maxLength="100"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:textColor="@color/textview_color"
+                        android:textColorHint="@color/textview_color" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/proxima_nova_soft_regular"
+                        android:text="Patient Age"
+                        android:textColor="#D0322B2B"
+                        android:textSize="15dp"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/age"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/bg_btn_curved_square"
+                        android:fontFamily="@font/proxima_nova_soft_regular"
+                        android:hint="Enter Age"
+                        android:inputType="number"
+                        android:maxLength="2"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:textColor="@color/textview_color"
+                        android:textColorHint="@color/textview_color"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/proxima_nova_soft_regular"
+                        android:text="Mobile Number"
+                        android:textColor="#D0322B2B"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/bg_btn_curved_square"
+                        android:fontFamily="@font/proxima_nova_soft_regular"
+                        android:hint="Enter Patient Mobile Number"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:textColor="@color/textview_color"
+                        android:textColorHint="@color/textview_color" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/proxima_nova_soft_regular"
+                        android:text="Email Id"
+                        android:textColor="#D0322B2B"
+                        android:textSize="15dp"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/bg_btn_curved_square"
+                        android:fontFamily="@font/proxima_nova_soft_regular"
+                        android:hint="Enter Patient Mobile Number"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:textColor="@color/textview_color"
+                        android:textColorHint="@color/textview_color"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/proxima_nova_soft_regular"
+                        android:text="Patient's Condition"
+                        android:textColor="#D0322B2B"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/condition"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/bg_btn_curved_square"
+                        android:fontFamily="@font/proxima_nova_soft_regular"
+                        android:hint="Enter condition"
+                        android:inputType="textAutoComplete"
+                        android:maxLength="10"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:textColor="@color/textview_color"
+                        android:textColorHint="@color/textview_color" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/proxima_nova_soft_regular"
+                                android:text="Blood Group"
+                                android:textColor="#D0322B2B"
+                                android:textSize="15dp" />
+
+                            <Spinner
+                                android:id="@+id/blood_group"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/bg_btn_curved_square"
+                                android:entries="@array/blood_grp"
+                                android:focusable="false"
+                                android:fontFamily="@font/proxima_nova_soft_regular"
+                                android:inputType="textAutoComplete"
+                                android:maxLines="1"
+                                android:padding="10dp"
+                                android:textColor="@color/textview_color"
+                                android:textColorHint="@color/textview_color" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/proxima_nova_soft_regular"
+                                android:text="Booking Date"
+                                android:textColor="#D0322B2B"
+                                android:textSize="15dp" />
+
+                            <EditText
+                                android:id="@+id/date"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/bg_btn_curved_square"
+                                android:focusable="false"
+                                android:fontFamily="@font/proxima_nova_soft_regular"
+                                android:hint="Select Date"
+                                android:inputType="textAutoComplete"
+                                android:maxLength="100"
+                                android:maxLines="1"
+                                android:padding="10dp"
+                                android:textColor="@color/textview_color"
+                                android:textColorHint="@color/textview_color" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="85dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/proxima_nova_soft_regular"
+                                android:text="Pincode"
+                                android:textColor="#D0322B2B"
+                                android:textSize="15dp" />
+
+                            <AutoCompleteTextView
+                                android:id="@+id/pincode"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/bg_btn_curved_square"
+                                android:entries="@array/blood_grp"
+                                android:maxLength="6"
+                                android:fontFamily="@font/proxima_nova_soft_regular"
+                                android:hint="Pincode"
+                                android:inputType="number"
+                                android:maxLines="1"
+                                android:padding="10dp"
+                                android:textColor="@color/textview_color"
+                                android:textColorHint="@color/textview_color" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/proxima_nova_soft_regular"
+                                android:text="State"
+                                android:textColor="#D0322B2B"
+                                android:textSize="15dp" />
+
+                            <AutoCompleteTextView
+                                android:id="@+id/state_dropdown"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/bg_btn_curved_square"
+                                android:entries="@array/blood_grp"
+                                android:focusable="false"
+                                android:fontFamily="@font/proxima_nova_soft_regular"
+                                android:hint="State"
+                                android:inputType="textAutoComplete"
+                                android:maxLines="1"
+                                android:padding="10dp"
+                                android:textColor="@color/textview_color"
+                                android:textColorHint="@color/textview_color" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/proxima_nova_soft_regular"
+                                android:text="City"
+                                android:textColor="#D0322B2B"
+                                android:textSize="15dp" />
+
+                            <AutoCompleteTextView
+                                android:id="@+id/city_dropdown"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/bg_btn_curved_square"
+                                android:fontFamily="@font/proxima_nova_soft_regular"
+                                android:hint="City"
+                                android:inputType="textAutoComplete"
+                                android:maxLength="100"
+                                android:maxLines="1"
+                                android:padding="10dp"
+                                android:textColor="@color/textview_color"
+                                android:textColorHint="@color/textview_color" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/proxima_nova_soft_regular"
+                        android:text="Pickup Point"
+                        android:textColor="#D0322B2B"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/pickupPoint"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/bg_btn_curved_square"
+                        android:fontFamily="@font/proxima_nova_soft_regular"
+                        android:hint="Enter Pickup Point"
+                        android:inputType="textAutoComplete"
+                        android:maxLength="10"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:textColor="@color/textview_color"
+                        android:textColorHint="@color/textview_color" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/proxima_nova_soft_regular"
+                        android:text="Drop Point"
+                        android:textColor="#D0322B2B"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/dropPoint"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/bg_btn_curved_square"
+                        android:fontFamily="@font/proxima_nova_soft_regular"
+                        android:hint="Enter Drop Point"
+                        android:inputType="textAutoComplete"
+                        android:maxLength="10"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:textColor="@color/textview_color"
+                        android:textColorHint="@color/textview_color" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/proxima_nova_soft_regular"
+                        android:text="Address"
+                        android:textColor="#D0322B2B"
+                        android:textSize="15dp" />
+
+
+                    <EditText
+                        android:id="@+id/address"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/bg_btn_curved_square"
+                        android:fontFamily="@font/proxima_nova_soft_regular"
+                        android:gravity="start"
+                        android:hint="Enter Your Address"
+                        android:inputType="textAutoComplete"
+                        android:maxLines="5"
+                        android:padding="10dp"
+                        android:textColor="@color/textview_color"
+                        android:textColorHint="@color/textview_color" />
+
+                    <TextView
+                        android:id="@+id/amt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/proxima_nova_soft_regular"
+                        android:text="Pay via"
+                        android:visibility="gone"
+                        android:textColor="@color/dot_dark_screen1"
+                        android:textSize="15dp" />
+
+                    <Spinner
+                        android:id="@+id/pay_option"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:visibility="gone"
+                        android:background="@drawable/bg_btn_curved_square"
+                        android:entries="@array/pay_via"
+                        android:fontFamily="@font/proxima_nova_soft_regular"
+                        android:textColor="@color/textview_color" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/add_report"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:fontFamily="@font/proxima_nova_soft_regular"
+                        android:text="**Add Report"
+                        android:background="@drawable/bg_btn_curved_square"
+                        android:textColor="#D50000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/report_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:fontFamily="@font/proxima_nova_soft_regular"
+                        android:textColor="#D0322B2B"
+                        android:textSize="15dp" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/book_now"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/bg_btn"
+                        android:fontFamily="@font/proxima_nova_soft_regular"
+                        android:gravity="center"
+                        android:paddingStart="15dp"
+                        android:inputType="textAutoComplete"
+                        android:paddingEnd="15dp"
+                        android:text="Book Appointment"
+                        android:textAllCaps="false"
+                        android:textColor="#ffffff"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

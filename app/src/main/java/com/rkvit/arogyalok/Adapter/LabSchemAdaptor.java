@@ -29,7 +29,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
-import com.razorpay.Checkout;
+//import com.razorpay.Checkout;
 import com.rkvit.arogyalok.Fragments.MedicineFragment;
 import com.rkvit.arogyalok.LocalDB.CartDatabase;
 import com.rkvit.arogyalok.Model.BookingMsgModel;
@@ -355,7 +355,7 @@ public class LabSchemAdaptor extends RecyclerView.Adapter<LabSchemAdaptor.MyView
 
         double amt = Double.parseDouble(list.get(itemPosition).getFinalPrice()) * 100;
 
-        final Checkout checkout = new Checkout();
+        //final Checkout checkout = new Checkout();
 
 
         try {
@@ -379,7 +379,7 @@ public class LabSchemAdaptor extends RecyclerView.Adapter<LabSchemAdaptor.MyView
 
             options.put("retry", preFill);
 
-            checkout.open(activity, options);
+            //checkout.open(activity, options);
         } catch (Exception e) {
             Toast.makeText(activity, "Error in payment: " + e.getMessage(), Toast.LENGTH_SHORT).show();
             e.printStackTrace();

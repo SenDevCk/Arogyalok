@@ -5,14 +5,14 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.razorpay.Checkout;
-import com.razorpay.PaymentResultListener;
+//import com.razorpay.Checkout;
+//import com.razorpay.PaymentResultListener;
 import com.rkvit.arogyalok.R;
 
 
 import org.json.JSONObject;
 
-public class PaymentActivity extends Activity implements PaymentResultListener {
+public class PaymentActivity extends Activity{// implements PaymentResultListener {
     private static final String TAG = PaymentActivity.class.getSimpleName();
 
     @Override
@@ -25,7 +25,7 @@ public class PaymentActivity extends Activity implements PaymentResultListener {
          To ensure faster loading of the Checkout form,
           call this method as early as possible in your checkout flow.
          */
-        Checkout.preload(getApplicationContext());
+        //Checkout.preload(getApplicationContext());
 
         // Payment button created by you in XML layout
 //        Button button = (Button) findViewById(R.id.btn_pay);
@@ -57,7 +57,7 @@ public class PaymentActivity extends Activity implements PaymentResultListener {
          */
         final Activity activity = this;
 
-        final Checkout co = new Checkout();
+        //final Checkout co = new Checkout();
 
         double amt = Double.parseDouble(getIntent().getStringExtra("amount")) * 100;
         System.out.println(">>>Amt"+ amt);
@@ -84,7 +84,7 @@ public class PaymentActivity extends Activity implements PaymentResultListener {
 
             options.put("retry", preFill);
 
-            co.open(activity, options);
+            //co.open(activity, options);
         } catch (Exception e) {
             Toast.makeText(this, "Error in payment: " + e.getMessage(), Toast.LENGTH_SHORT).show();
             e.printStackTrace();
@@ -120,7 +120,7 @@ public class PaymentActivity extends Activity implements PaymentResultListener {
      * onPaymentSuccess
      * Wrap your code in try catch, as shown, to ensure that this method runs correctly
      */
-    @SuppressWarnings("unused")
+ /*   @SuppressWarnings("unused")
     @Override
     public void onPaymentSuccess(String razorpayPaymentID) {
         try {
@@ -128,15 +128,15 @@ public class PaymentActivity extends Activity implements PaymentResultListener {
         } catch (Exception e) {
             Log.e(TAG, "Exception in onPaymentSuccess", e);
         }
-    }
+    }*/
 
     /**
      * The name of the function has to be
      * onPaymentError
      * Wrap your code in try catch, as shown, to ensure that this method runs correctly
      */
-    @SuppressWarnings("unused")
-    @Override
+   // @SuppressWarnings("unused")
+    /*@Override
     public void onPaymentError(int code, String response) {
         try {
             Toast.makeText(this, "Payment failed: " + code + " " + response, Toast.LENGTH_SHORT).show();
@@ -144,4 +144,4 @@ public class PaymentActivity extends Activity implements PaymentResultListener {
             Log.e(TAG, "Exception in onPaymentError", e);
         }
     }
-}
+*/}

@@ -44,7 +44,7 @@ import androidx.fragment.app.FragmentTransaction;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.navigation.NavigationView;
 import com.google.gson.Gson;
-import com.razorpay.PaymentResultListener;
+//import com.razorpay.PaymentResultListener;
 import com.rkvit.arogyalok.Fragments.HomeFragment;
 import com.rkvit.arogyalok.Fragments.ListFragment;
 import com.rkvit.arogyalok.Fragments.MedCartFragment;
@@ -84,7 +84,7 @@ import retrofit2.Response;
 import static android.media.MediaRecorder.VideoSource.CAMERA;
 
 public class MainHome extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener,
-        View.OnClickListener, PaymentResultListener {
+        View.OnClickListener{//, PaymentResultListener {
 
     LinearLayout fabLayout1, fabLayout2, fabLayout3;
     View fabBGLayout;
@@ -454,7 +454,7 @@ public class MainHome extends AppCompatActivity implements NavigationView.OnNavi
     }
 
 
-    @Override
+/*    @Override
     public void onPaymentSuccess(String s) {
 
 //        Toast.makeText(this, "Your details has been sent.", Toast.LENGTH_LONG).show();
@@ -468,7 +468,7 @@ public class MainHome extends AppCompatActivity implements NavigationView.OnNavi
 
         Toast.makeText(this, "Failure>> " + s, Toast.LENGTH_SHORT).show();
 
-    }
+    }*/
 
 
     private void uploadPres() {

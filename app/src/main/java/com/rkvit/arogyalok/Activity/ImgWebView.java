@@ -83,7 +83,7 @@ public class ImgWebView extends AppCompatActivity {
 
         webSettings.setRenderPriority(WebSettings.RenderPriority.HIGH);
         webSettings.setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);
-        webSettings.setAppCacheEnabled(true);
+        //webSettings.setAppCacheEnabled(true);
         webView.getSettings().setBuiltInZoomControls(true);
         webSettings.setDisplayZoomControls(false);
         webView.getSettings().setSupportMultipleWindows(true);

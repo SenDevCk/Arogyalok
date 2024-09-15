@@ -70,7 +70,7 @@ import com.karumi.dexter.listener.PermissionDeniedResponse;
 import com.karumi.dexter.listener.PermissionGrantedResponse;
 import com.karumi.dexter.listener.PermissionRequest;
 import com.karumi.dexter.listener.single.PermissionListener;
-import com.razorpay.Checkout;
+//import com.razorpay.Checkout;
 import com.rkvit.arogyalok.Adapter.DataModel;
 import com.rkvit.arogyalok.LocalDB.CartDatabase;
 import com.rkvit.arogyalok.Model.BookingMsgModel;
@@ -681,7 +681,7 @@ public class MedDetails extends Fragment {
 
         final Activity activity = getActivity();
 
-        final Checkout checkout = new Checkout();
+        //final Checkout checkout = new Checkout();
 
 
         try {
@@ -705,7 +705,7 @@ public class MedDetails extends Fragment {
 
             options.put("retry", preFill);
 
-            checkout.open(getActivity(), options);
+            //checkout.open(getActivity(), options);
         } catch (Exception e) {
             Toast.makeText(getActivity(), "Error in payment: " + e.getMessage(), Toast.LENGTH_SHORT).show();
             e.printStackTrace();

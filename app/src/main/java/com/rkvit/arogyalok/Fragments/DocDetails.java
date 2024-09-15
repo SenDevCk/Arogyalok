@@ -43,7 +43,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
-import com.razorpay.Checkout;
+//import com.razorpay.Checkout;
 import com.rkvit.arogyalok.Activity.IOnBackPressed;
 import com.rkvit.arogyalok.Adapter.DataModel;
 import com.rkvit.arogyalok.Adapter.DaysAdaptor;
@@ -827,7 +827,7 @@ public class DocDetails extends Fragment implements IOnBackPressed {
 
         final Activity activity = getActivity();
 
-        final Checkout checkout = new Checkout();
+        //final Checkout checkout = new Checkout();
 
 
         try {
@@ -851,7 +851,7 @@ public class DocDetails extends Fragment implements IOnBackPressed {
 
             options.put("retry", preFill);
 
-            checkout.open(getActivity(), options);
+            //checkout.open(getActivity(), options);
         } catch (Exception e) {
             Toast.makeText(getActivity(), "Error in payment: " + e.getMessage(), Toast.LENGTH_SHORT).show();
             e.printStackTrace();

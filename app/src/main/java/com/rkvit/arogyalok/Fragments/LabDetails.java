@@ -48,7 +48,7 @@ import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import com.razorpay.Checkout;
+//import com.razorpay.Checkout;
 import com.rkvit.arogyalok.Adapter.DataModel;
 import com.rkvit.arogyalok.Adapter.DaysAdaptor;
 import com.rkvit.arogyalok.Adapter.LabSchemAdaptor;
@@ -1187,7 +1187,7 @@ public class LabDetails extends Fragment implements MultiSpinner.MultiSpinnerLis
 
         final Activity activity = getActivity();
 
-        final Checkout checkout = new Checkout();
+        //final Checkout checkout = new Checkout();
 
 
         try {
@@ -1211,7 +1211,7 @@ public class LabDetails extends Fragment implements MultiSpinner.MultiSpinnerLis
 
             options.put("retry", preFill);
 
-            checkout.open(getActivity(), options);
+            //checkout.open(getActivity(), options);
         } catch (Exception e) {
             Toast.makeText(getActivity(), "Error in payment: " + e.getMessage(), Toast.LENGTH_SHORT).show();
             e.printStackTrace();
